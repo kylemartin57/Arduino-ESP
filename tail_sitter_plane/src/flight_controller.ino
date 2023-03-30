@@ -3,9 +3,9 @@
 // Final Project
 
 // This file runs on the reciever board on the plane. It receives 32 byte packets from the transmitter every 10ms.
-// The packages contain the controller joystick locations so it can determine the throttle and aeleron movements.
+// The packages contain the controller joystick locations so it can determine the throttle and aileron movements.
 // The decision tree is located in the corrections() function at line 282. This function makes adjustments when 
-// the plane enters a none stable position. 
+// the plane enters a non stable position. 
 
 // Including libraries and defining variables
 #include "Wire.h"
