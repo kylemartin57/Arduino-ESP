@@ -1,11 +1,3 @@
-/*
-* Arduino Wireless Communication Tutorial
-*       Example 1 - Receiver Code
-*                
-* by Dejan Nedelkovski, www.HowToMechatronics.com
-* 
-* Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
-*/
 // Screen dimensions
 #define SCREEN_WIDTH  128
 #define SCREEN_HEIGHT 128 // Change this to 96 for 1.27" OLED.
@@ -33,13 +25,8 @@
 #include <Adafruit_SSD1351.h>
 #include <SPI.h>
 
-// Option 1: use any pins but a little slower
 Adafruit_SSD1351 tft = Adafruit_SSD1351(SCREEN_WIDTH, SCREEN_HEIGHT, CS_PIN, DC_PIN, MOSI_PIN, SCLK_PIN, RST_PIN);  
 
-// Option 2: must use the hardware SPI pins 
-// (for UNO thats sclk = 13 and sid = 11) and pin 10 must be 
-// an output. This is much faster - also required if you want
-// to use the microSD card (see the image drawing example)
 //Adafruit_SSD1351 tft = Adafruit_SSD1351(SCREEN_WIDTH, SCREEN_HEIGHT, &SPI, CS_PIN, DC_PIN, RST_PIN);
 
 #include <nRF24L01.h>
